@@ -1,3 +1,4 @@
+//ImagePopup.jsx
 import React from "react";
 
 export default function ImagePopup({ card, onClose, isOpen = true }) {
@@ -7,7 +8,7 @@ export default function ImagePopup({ card, onClose, isOpen = true }) {
     <div className={`popup ${isOpen ? 'popup_opened' : ''}`}>
       <div className="popup__modal">
         <button
-          className="popup__close"
+          className="popup__close-button"
           type="button"
           aria-label="Cerrar"
           onClick={onClose}
