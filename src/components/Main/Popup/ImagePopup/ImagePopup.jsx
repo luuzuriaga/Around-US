@@ -1,5 +1,6 @@
 //ImagePopup.jsx
 import React from "react";
+import closeButton from "../../../../../images/CloseIcon.png";
 
 export default function ImagePopup({ card, onClose, isOpen = true }) {
   if (!card) return null;
@@ -14,7 +15,7 @@ export default function ImagePopup({ card, onClose, isOpen = true }) {
           onClick={onClose}
         >
           <img
-            src="./images/CloseIcon.png"
+            src={closeButton}
             alt="Botón Cerrar"
             className="popup__close-button"
           />

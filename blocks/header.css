@@ -7,6 +7,39 @@
   position: relative;
 }
 
+.header__nav {
+  display: flex;
+  align-items: center; /* Tu solicitud */
+  gap: 24px;           /* Espaciado moderno entre links */
+  position: absolute;
+  right: 0;
+  top: 50%;            /* Centrado vertical relativo al header */
+  transform: translateY(-50%); 
+}
+
+.header__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  transition: opacity 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent; /* Línea invisible base */
+}
+
+.header__link:hover {
+  opacity: 0.7;
+  border-bottom: 2px solid #FFFFFF; /* Subrayado elegante al pasar el mouse */
+}
+
+/* Estilo específico para resaltar si un link es más importante (opcional) */
+.header__link_active {
+  font-weight: 700;
+}
+
+
 .header__image {
   max-width: 173px;
   width: 100%;
@@ -25,6 +58,10 @@
     width: 100%;
     margin-top: 0px;
     margin-left: 27px;
+  }
+  .header__nav {
+    gap: 15px;
+    font-size: 14px;
   }
 }
 
@@ -47,5 +84,9 @@
     width: 100%;
     height: 1;
     margin-top: 32px;
+  }
+  .header__nav {
+    gap: 15px;
+    font-size: 14px;
   }
 }
