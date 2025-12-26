@@ -1,12 +1,13 @@
 //Header.jsx
 import logo from "../../../images/logo.png";
 import { Link } from 'react-router-dom';
+import line from "../../../images/Line.png";
 
 function Header({ loggedIn, userEmail, onSignOut }) {
   return (
     <header className="header">
       <img src={logo} alt="Logo Titulo" className="header__image" />
-      <img src="./images/Line.png" alt="Linea" className="header__image-line" />
+      <img src={line} alt="Linea" className="header__image-line" />
       
       {loggedIn ? (
         <div className="header__auth">
